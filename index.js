@@ -80,6 +80,16 @@ for (let i = 0; i < 20; i++) {
   }
 };
 
+for (let i = 0; i < 20; i++) {
+  const rcountrys = ["rfifa", "rstadiums", "rqat", "recu", "rsen", "rhol", "ring", "riran", "rusa", "rgal","rarg", "rara", "rmex", "rpol", "rfra", "raus", "rdin", "rtun", "resp", "rcos", "rale", "rjap", "rbel", "rcan", "rmar", "rcro", "rbra", "rser", "rsui", "rcam", "rpor", "rgan", "ruru", "rcor", "rmus", "rcoca"];
+
+  for(let a = 0; a < rcountrys.length; a++){
+    if (localStorage.getItem(rcountrys[a] + i)) {
+      document.getElementById(rcountrys[a] + i).className = "figurita on";
+    }
+  }
+};
+
 if(Number(porcentaje.innerHTML) == 0 ){
   percent1.setAttribute("class", "mask full-1 cero") 
   percent2.setAttribute("class", "fill-1 cero")
