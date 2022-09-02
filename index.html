@@ -1,0 +1,2996 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header id="header">
+      <a href="#" class="title">Mi álbum Qatar 2022</a>
+      <a href="#" id="menu-icon"> <img id="img" src="menus.png" /></a>
+    </header>
+    <nav id="menu" hidden=true>
+      <div class="conteo">
+        <div>
+          <p>Tengo</p>
+          <p><span id="tengo"></span> / 678</p>
+        </div>
+        <div>
+          <p>Me faltan</p>
+          <p id="falta">638</p>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="percent">
+          <div class="circle-wrap">
+            <div class="circle">
+              <div class="mask full-1" id="percent1">
+                <div class="fill-1" id="percent2"></div>
+              </div>
+              <div class="mask half">
+                <div class="fill-1" id="percent3"></div>
+              </div>
+              <div class="inside-circle"><span id="porcentaje">0</span> %</div>
+            </div>
+          </div>
+        <p>
+        del Album<br>Completo
+        </p>
+      </div>
+    </nav>
+
+    <main class="main">      
+    <div class="buttons">
+        <a href="#" class="button-mode" id="l"> Repetidas </a>
+        <a href="#" class="button-mode under" id="r"> Todo el álbum </a>
+    </div>
+
+    
+    <h2>Equipos</h2>
+    <div class="equipos">
+    <div class="grupo flex">
+      <p>Grupo A</p>
+      <a href="#qatar" class="equipo-a stadiums" style="color: white;">Qatar</a>
+      <a href="#ecuador" class="equipo-a ecu" style="color: black;">Ecuador</a>
+      <a href="#senegal" class="equipo-a sen" style="color: white;">Senegal</a>
+      <a href="#holanda" class="equipo-a hol" style="color: white;">Holanda</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo B</p>
+      <a href="#inglaterra" class="equipo-a ing" style="color: black;">Inglaterra</a>
+      <a href="#iran" class="equipo-a iran" style="color: white;">Iran</a>
+      <a href="#usa" class="equipo-a usa" style="color: black;">Usa</a>
+      <a href="#gales" class="equipo-a gal" style="color: white;">Gales</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo C</p>
+      <a href="#argentina" class="equipo-a arg" style="color: black;">Argentina</a>
+      <a href="#arabia" class="equipo-a ara" style="color: white;">Arabia</a>
+      <a href="#mexico" class="equipo-a mex" style="color: white;">Mexico</a>
+      <a href="#polonia" class="equipo-a pol" style="color: white;">Polonia</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo D</p>
+      <a href="#francia" class="equipo-a fra" style="color: white;">Francia</a>
+      <a href="#australia" class="equipo-a aus" style="color: black;">Australia</a>
+      <a href="#dinamarca" class="equipo-a din" style="color: white;">Dinamarca</a>
+      <a href="#tunez" class="equipo-a tun" style="color: white;">Tunez</a>
+    </div>
+        <div class="grupo flex">
+      <p>Grupo E</p>
+      <a href="#españa" class="equipo-a esp" style="color: white;">España</a>
+      <a href="#costa" class="equipo-a cor" style="color: white;">Costa Rica</a>
+      <a href="#alemania" class="equipo-a ale" style="color: white;">Alemania</a>
+      <a href="#japon" class="equipo-a jap" style="color: white;">Japon</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo F</p>
+      <a href="#belgica" class="equipo-a bel" style="color: white;">Belgica</a>
+      <a href="#canada" class="equipo-a can" style="color: white;">Canada</a>
+      <a href="#marruecos" class="equipo-a mar" style="color: white;">Marruecos</a>
+      <a href="#croacia" class="equipo-a cro" style="color: white;">Croacia</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo G</p>
+      <a href="#brasil" class="equipo-a bra" style="color: white;">Brasil</a>
+      <a href="#serbia" class="equipo-a ser" style="color: white;">Serbia</a>
+      <a href="#suiza" class="equipo-a sui" style="color: white;">Suiza</a>
+      <a href="#camerun" class="equipo-a cam" style="color: white;">Camerun</a>
+    </div>
+    <div class="grupo flex">
+      <p>Grupo H</p>
+      <a href="#portugal" class="equipo-a por" style="color: white;">Portugal</a>
+      <a href="#ghana" class="equipo-a gan" style="color: white;">Ghana</a>
+      <a href="#uruguay" class="equipo-a uru" style="color: black;">Uruguay</a>
+      <a href="#corea" class="equipo-a cor" style="color: white;">Corea del Sur</a>
+    </div>
+  </div>
+
+    <div class="pais fifa">
+      <a class="name-white">Primera página</a>
+      <div class="figuritas">
+        <div id="fifa1" class="figurita off">
+          <p class="numero">00</p>
+          <p class="jugador">Panini</p>
+        </div>
+        <div id="fifa2" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">FIFA</p>
+        </div>
+        <div id="fifa3" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Copa 1/2</p>
+        </div>
+        <div id="fifa4" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Copa 2/2</p>
+        </div>
+        <div id="fifa5" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Masc. 1/2</p>
+        </div>
+        <div id="fifa6" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Masc. 2/2</p>
+        </div>
+        <div id="fifa7" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Logo 1/2</p>
+        </div>
+        <div id="fifa8" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Logo 2/2</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais stadiums">
+      <a class="name-white">Estadios</a>
+      <div class="figuritas">
+        <div id="stadiums1" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums2" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums3" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums4" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums5" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums6" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums7" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums8" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums9" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums10" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Estadio</p>
+        </div>
+        <div id="stadiums11" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Al Rihla</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais stadiums" id="qatar">
+      <a class="name-white">Qatar</a>
+      <div class="figuritas">
+        <div id="qat1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="qat2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Al Sheeb</p>
+        </div>
+        <div id="qat3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Barsham</p>
+        </div>
+        <div id="qat4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Ahmed</p>
+        </div>
+        <div id="qat5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Alrawi</p>
+        </div>
+        <div id="qat6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Hassan</p>
+        </div>
+        <div id="qat7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Khidir</p>
+        </div>
+        <div id="qat8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Khoukhi</p>
+        </div>
+        <div id="qat9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Miguel</p>
+        </div>
+        <div id="qat10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Salman</p>
+        </div>
+        <div id="qat11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Boudiaf</p>
+        </div>
+        <div id="qat12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Hatem</p>
+        </div>
+        <div id="qat13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Madibo</p>
+        </div>
+        <div id="qat14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Abdurisag</p>
+        </div>
+        <div id="qat15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Hassan</p>
+        </div>
+        <div id="qat16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Alaaeldin</p>
+        </div>
+        <div id="qat17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Al Haydos</p>
+        </div>
+        <div id="qat18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Ali</p>
+        </div>
+        <div id="qat19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Muntari</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais ecu" id="ecuador">
+      <a class="name-black">Ecuador</a>
+      <div class="figuritas">
+        <div id="ecu1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="ecu2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Galindez</p>
+        </div>
+        <div id="ecu3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Dominguez</p>
+        </div>
+        <div id="ecu4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Arboleda</p>
+        </div>
+        <div id="ecu5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Castillo</p>
+        </div>
+        <div id="ecu6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Estupiñan</p>
+        </div>
+        <div id="ecu7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Hincapie</p>
+        </div>
+        <div id="ecu8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Preciado</p>
+        </div>
+        <div id="ecu9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Torres</p>
+        </div>
+        <div id="ecu10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Caicedo</p>
+        </div>
+        <div id="ecu11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Franco</p>
+        </div>
+        <div id="ecu12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Gruezo</p>
+        </div>
+        <div id="ecu13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Mendez</p>
+        </div>
+        <div id="ecu14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Sarmiento</p>
+        </div>
+        <div id="ecu15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Estrada</p>
+        </div>
+        <div id="ecu16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Mena</p>
+        </div>
+        <div id="ecu17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Plata</p>
+        </div>
+        <div id="ecu18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Preciado</p>
+        </div>
+        <div id="ecu19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Valencia</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais sen" id="senegal">
+      <a class="name-white">Senegal</a>
+      <div class="figuritas">
+        <div id="sen1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="sen2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Mendy</p>
+        </div>
+        <div id="sen3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Gomis</p>
+        </div>
+        <div id="sen4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Ciss</p>
+        </div>
+        <div id="sen5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Cisse</p>
+        </div>
+        <div id="sen6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Diallo</p>
+        </div>
+        <div id="sen7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Koulibaly</p>
+        </div>
+        <div id="sen8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Mbaye</p>
+        </div>
+        <div id="sen9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Sarr</p>
+        </div>
+        <div id="sen10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Diatta</p>
+        </div>
+        <div id="sen11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Gueye</p>
+        </div>
+        <div id="sen12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Gueye</p>
+        </div>
+        <div id="sen13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Kouyate</p>
+        </div>
+        <div id="sen14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Mendy</p>
+        </div>
+        <div id="sen15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Dia</p>
+        </div>
+        <div id="sen16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Diedhiou</p>
+        </div>
+        <div id="sen17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Dieng</p>
+        </div>
+        <div id="sen18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Mane</p>
+        </div>
+        <div id="sen19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Sarr</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais hol" id="holanda">
+      <a class="name-black">Holanda</a>
+      <div class="figuritas">
+        <div id="hol1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="hol2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Bijlow</p>
+        </div>
+        <div id="hol3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Cillesen</p>
+        </div>
+        <div id="hol4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Blind</p>
+        </div>
+        <div id="hol5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">De Ligt</p>
+        </div>
+        <div id="hol6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">De Vrij</p>
+        </div>
+        <div id="hol7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Dumfries</p>
+        </div>
+        <div id="hol8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Van Dijk</p>
+        </div>
+        <div id="hol9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Berghuis</p>
+        </div>
+        <div id="hol10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">De Jong</p>
+        </div>
+        <div id="hol11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Gravenberch</p>
+        </div>
+        <div id="hol12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Klaassen</p>
+        </div>
+        <div id="hol13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Koopmeiners</p>
+        </div>
+        <div id="hol14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Wijnaldum</p>
+        </div>
+        <div id="hol15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Bergwijn</p>
+        </div>
+        <div id="hol16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Danjuma</p>
+        </div>
+        <div id="hol17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Depay</p>
+        </div>
+        <div id="hol18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Gakpo</p>
+        </div>
+        <div id="hol19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Malen</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais ing" id="inglaterra">
+      <a class="name-black">Inglaterra</a>
+      <div class="figuritas">
+        <div id="ing1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="ing2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Pickford</p>
+        </div>
+        <div id="ing3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Ramsdale</p>
+        </div>
+        <div id="ing4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Arnold</p>
+        </div>
+        <div id="ing5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Coady</p>
+        </div>
+        <div id="ing6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Maguire</p>
+        </div>
+        <div id="ing7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Shaw</p>
+        </div>
+        <div id="ing8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Stones</p>
+        </div>
+        <div id="ing9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Walker</p>
+        </div>
+        <div id="ing10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Bellingham</p>
+        </div>
+        <div id="ing11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Grealish</p>
+        </div>
+        <div id="ing12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Henderson</p>
+        </div>
+        <div id="ing13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Mount</p>
+        </div>
+        <div id="ing14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Phillips</p>
+        </div>
+        <div id="ing15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Rice</p>
+        </div>
+        <div id="ing16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Foden</p>
+        </div>
+        <div id="ing17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Kane</p>
+        </div>
+        <div id="ing18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Saka</p>
+        </div>
+        <div id="ing19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Sterling</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais iran" id="iran">
+      <a class="name-white">Iran</a>
+      <div class="figuritas">
+        <div id="iran1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="iran2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Abedzadeh</p>
+        </div>
+        <div id="iran3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Beiranvand</p>
+        </div>
+        <div id="iran4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Hajsafi</p>
+        </div>
+        <div id="iran5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Hosseini</p>
+        </div>
+        <div id="iran6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Kanaani</p>
+        </div>
+        <div id="iran7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Khalilzadeh</p>
+        </div>
+        <div id="iran8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Mohammadi</p>
+        </div>
+        <div id="iran9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Moharrami</p>
+        </div>
+        <div id="iran10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Noorafkan</p>
+        </div>
+        <div id="iran11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Amiri</p>
+        </div>
+        <div id="iran12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Ezatolahi</p>
+        </div>
+        <div id="iran13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Gholizadeh</p>
+        </div>
+        <div id="iran14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Jahanbakhsh</p>
+        </div>
+        <div id="iran15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Nourollahi</p>
+        </div>
+        <div id="iran16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Ansarifard</p>
+        </div>
+        <div id="iran17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Azmoun</p>
+        </div>
+        <div id="iran18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Ghoddos</p>
+        </div>
+        <div id="iran19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Taremi</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais usa" id="usa">
+      <a class="name-black">Estados Unidos</a>
+      <div class="figuritas">
+        <div id="usa1" class="figurita off">
+          <p class="numero">1</p>
+          <p class="jugador">Escudo</p>
+        </div>
+        <div id="usa2" class="figurita off">
+          <p class="numero">2</p>
+          <p class="jugador">Turner</p>
+        </div>
+        <div id="usa3" class="figurita off">
+          <p class="numero">3</p>
+          <p class="jugador">Steffen</p>
+        </div>
+        <div id="usa4" class="figurita off">
+          <p class="numero">4</p>
+          <p class="jugador">Dest</p>
+        </div>
+        <div id="usa5" class="figurita off">
+          <p class="numero">5</p>
+          <p class="jugador">Long</p>
+        </div>
+        <div id="usa6" class="figurita off">
+          <p class="numero">6</p>
+          <p class="jugador">Richards</p>
+        </div>
+        <div id="usa7" class="figurita off">
+          <p class="numero">7</p>
+          <p class="jugador">Robinson</p>
+        </div>
+        <div id="usa8" class="figurita off">
+          <p class="numero">8</p>
+          <p class="jugador">Yedlin</p>
+        </div>
+        <div id="usa9" class="figurita off">
+          <p class="numero">9</p>
+          <p class="jugador">Zimmerman</p>
+        </div>
+        <div id="usa10" class="figurita off">
+          <p class="numero">10</p>
+          <p class="jugador">Aaronson</p>
+        </div>
+        <div id="usa11" class="figurita off">
+          <p class="numero">11</p>
+          <p class="jugador">Acosta</p>
+        </div>
+        <div id="usa12" class="figurita off">
+          <p class="numero">12</p>
+          <p class="jugador">Adams</p>
+        </div>
+        <div id="usa13" class="figurita off">
+          <p class="numero">13</p>
+          <p class="jugador">Mckennie</p>
+        </div>
+        <div id="usa14" class="figurita off">
+          <p class="numero">14</p>
+          <p class="jugador">Musa</p>
+        </div>
+        <div id="usa15" class="figurita off">
+          <p class="numero">15</p>
+          <p class="jugador">Ferreira</p>
+        </div>
+        <div id="usa16" class="figurita off">
+          <p class="numero">16</p>
+          <p class="jugador">Pepi</p>
+        </div>
+        <div id="usa17" class="figurita off">
+          <p class="numero">17</p>
+          <p class="jugador">Pulisic</p>
+        </div>
+        <div id="usa18" class="figurita off">
+          <p class="numero">18</p>
+          <p class="jugador">Reyna</p>
+        </div>
+        <div id="usa19" class="figurita off">
+          <p class="numero">19</p>
+          <p class="jugador">Weah</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="pais gal" id="gales">
+        <a class="name-white">Gales</a>
+        <div class="figuritas">
+          <div id="gal1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="gal2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Ward</p>
+          </div>
+          <div id="gal3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Hennessey</p>
+          </div>
+          <div id="gal4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Ampadu</p>
+          </div>
+          <div id="gal5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Davies</p>
+          </div>
+          <div id="gal6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Gunter</p>
+          </div>
+          <div id="gal7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Mepham</p>
+          </div>
+          <div id="gal8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Roberts</p>
+          </div>
+          <div id="gal9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Rodon</p>
+          </div>
+          <div id="gal10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Williams</p>
+          </div>
+          <div id="gal11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Allen</p>
+          </div>
+          <div id="gal12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Morrell</p>
+          </div>
+          <div id="gal13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Ramsey</p>
+          </div>
+          <div id="gal14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Williams</p>
+          </div>
+          <div id="gal15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Wilson</p>
+          </div>
+          <div id="gal16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Bale</p>
+          </div>
+          <div id="gal17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">James</p>
+          </div>
+          <div id="gal18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Johnson</p>
+          </div>
+          <div id="gal19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Moore</p>
+          </div>
+        </div>
+      </div>
+      
+    <div class="pais arg" id="argentina">
+        <a class="name-black">Argentina</a>
+        <div class="figuritas">
+          <div id="arg1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="arg2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Martinez</p>
+          </div>
+          <div id="arg3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Armani</p>
+          </div>
+          <div id="arg4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Acuña</p>
+          </div>
+          <div id="arg5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Molina</p>
+          </div>
+          <div id="arg6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Otamendi</p>
+          </div>
+          <div id="arg7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Pezella</p>
+          </div>
+          <div id="arg8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Romero</p>
+          </div>
+          <div id="arg9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">De Paul</p>
+          </div>
+          <div id="arg10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Di Maria</p>
+          </div>
+          <div id="arg11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Lo Celso</p>
+          </div>
+          <div id="arg12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Paredes</p>
+          </div>
+          <div id="arg13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Rodriguez</p>
+          </div>
+          <div id="arg14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Alvarez</p>
+          </div>
+          <div id="arg15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Correa</p>
+          </div>
+          <div id="arg16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Gomez</p>
+          </div>
+          <div id="arg17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Gonzalez</p>
+          </div>
+          <div id="arg18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Martinez</p>
+          </div>
+          <div id="arg19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Messi</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais ara" id="arabia">
+        <a class="name-white">Arabia</a>
+        <div class="figuritas">
+          <div id="ara1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="ara2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Al Owais</p>
+          </div>
+          <div id="ara3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Al Rubaie</p>
+          </div>
+          <div id="ara4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Al Amri</p>
+          </div>
+          <div id="ara5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Al Boleahi</p>
+          </div>
+          <div id="ara6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Al Burayk</p>
+          </div>
+          <div id="ara7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Al Ghannam</p>
+          </div>
+          <div id="ara8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Al Shahrani</p>
+          </div>
+          <div id="ara9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Al Tambakti</p>
+          </div>
+          <div id="ara10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Madu</p>
+          </div>
+          <div id="ara11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Al Faraj</p>
+          </div>
+          <div id="ara12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Al Malki</p>
+          </div>
+          <div id="ara13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Al Najei</p>
+          </div>
+          <div id="ara14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Bahebri</p>
+          </div>
+          <div id="ara15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Kanno</p>
+          </div>
+          <div id="ara16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Otayf</p>
+          </div>
+          <div id="ara17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Al Buraikan</p>
+          </div>
+          <div id="ara18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Al Dawsari</p>
+          </div>
+          <div id="ara19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Al Ghannam</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais mex" id="mexico">
+        <a class="name-white">Mexico</a>
+        <div class="figuritas">
+          <div id="mex1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="mex2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Ochoa</p>
+          </div>
+          <div id="mex3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Talavera</p>
+          </div>
+          <div id="mex4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Araujo</p>
+          </div>
+          <div id="mex5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Gallardo</p>
+          </div>
+          <div id="mex6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Montes</p>
+          </div>
+          <div id="mex7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Moreno</p>
+          </div>
+          <div id="mex8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Romo</p>
+          </div>
+          <div id="mex9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Sanchez</p>
+          </div>
+          <div id="mex10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Alvarez</p>
+          </div>
+          <div id="mex11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Corona</p>
+          </div>
+          <div id="mex12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Guardado</p>
+          </div>
+          <div id="mex13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Gutierrez</p>
+          </div>
+          <div id="mex14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Herrera</p>
+          </div>
+          <div id="mex15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Lainez</p>
+          </div>
+          <div id="mex16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Rodriguez</p>
+          </div>
+          <div id="mex17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Funes Mori</p>
+          </div>
+          <div id="mex18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Jimenez</p>
+          </div>
+          <div id="mex19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Lozano</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais pol" id="polonia">
+        <a class="name-white">Polonia</a>
+        <div class="figuritas">
+          <div id="pol1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="pol2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Szczesny</p>
+          </div>
+          <div id="pol3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Skorupski</p>
+          </div>
+          <div id="pol4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Bednarek</p>
+          </div>
+          <div id="pol5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Bereszyñski</p>
+          </div>
+          <div id="pol6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Cash</p>
+          </div>
+          <div id="pol7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Glik</p>
+          </div>
+          <div id="pol8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Puchacz</p>
+          </div>
+          <div id="pol9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Rybus</p>
+          </div>
+          <div id="pol10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Jozwiak</p>
+          </div>
+          <div id="pol11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Klich</p>
+          </div>
+          <div id="pol12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Krychowiak</p>
+          </div>
+          <div id="pol13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Moder</p>
+          </div>
+          <div id="pol14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Szymanski</p>
+          </div>
+          <div id="pol15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Zielinski</p>
+          </div>
+          <div id="pol16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Lewandoski</p>
+          </div>
+          <div id="pol17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Milik</p>
+          </div>
+          <div id="pol18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Piatek</p>
+          </div>
+          <div id="pol19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Swiderski</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais fra" id="francia">
+        <a class="name-white">Francia</a>
+        <div class="figuritas">
+          <div id="fra1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="fra2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Lloris</p>
+          </div>
+          <div id="fra3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Maignan</p>
+          </div>
+          <div id="fra4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Hernandez</p>
+          </div>
+          <div id="fra5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Hernandez</p>
+          </div>
+          <div id="fra6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Kimpembe</p>
+          </div>
+          <div id="fra7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Kounde</p>
+          </div>
+          <div id="fra8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Pavard</p>
+          </div>
+          <div id="fra9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Varane</p>
+          </div>
+          <div id="fra10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Kante</p>
+          </div>
+          <div id="fra11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Pogba</p>
+          </div>
+          <div id="fra12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Rabiot</p>
+          </div>
+          <div id="fra13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Tchouameni</p>
+          </div>
+          <div id="fra14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Ben Yedder</p>
+          </div>
+          <div id="fra15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Benzema</p>
+          </div>
+          <div id="fra16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Coman</p>
+          </div>
+          <div id="fra17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Griezmann</p>
+          </div>
+          <div id="fra18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Mbappe</p>
+          </div>
+          <div id="fra19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Nkunku</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais aus" id="australia">
+        <a class="name-black">Australia</a>
+        <div class="figuritas">
+          <div id="aus1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="aus2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Ryan</p>
+          </div>
+          <div id="aus3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Redmayne</p>
+          </div>
+          <div id="aus4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Behich</p>
+          </div>
+          <div id="aus5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Degenek</p>
+          </div>
+          <div id="aus6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Grant</p>
+          </div>
+          <div id="aus7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">King</p>
+          </div>
+          <div id="aus8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Sainsbury</p>
+          </div>
+          <div id="aus9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Souttar</p>
+          </div>
+          <div id="aus10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Hrustic</p>
+          </div>
+          <div id="aus11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Irvine</p>
+          </div>
+          <div id="aus12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Jeggo</p>
+          </div>
+          <div id="aus13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Mabil</p>
+          </div>
+          <div id="aus14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Mooy</p>
+          </div>
+          <div id="aus15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Boyle</p>
+          </div>
+          <div id="aus16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Duke</p>
+          </div>
+          <div id="aus17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Goodwin</p>
+          </div>
+          <div id="aus18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Leckie</p>
+          </div>
+          <div id="aus19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Taggart</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais din" id="dinamarca">
+        <a class="name-white">Dinamarca</a>
+        <div class="figuritas">
+          <div id="din1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="din2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Schmeichel</p>
+          </div>
+          <div id="din3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Ronnow</p>
+          </div>
+          <div id="din4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Christensen</p>
+          </div>
+          <div id="din5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Kjaer</p>
+          </div>
+          <div id="din6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Maehle</p>
+          </div>
+          <div id="din7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Larsen</p>
+          </div>
+          <div id="din8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Vestergaard</p>
+          </div>
+          <div id="din9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Damsgaard</p>
+          </div>
+          <div id="din10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Delaney</p>
+          </div>
+          <div id="din11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Eriksen</p>
+          </div>
+          <div id="din12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Hojbjerg</p>
+          </div>
+          <div id="din13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Norgaard</p>
+          </div>
+          <div id="din14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Wass</p>
+          </div>
+          <div id="din15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Braithwaite</p>
+          </div>
+          <div id="din16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Dolberg</p>
+          </div>
+          <div id="din17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Poulsen</p>
+          </div>
+          <div id="din18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Olsen</p>
+          </div>
+          <div id="din19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Wind</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais tun" id="tunez">
+        <a class="name-white">Tunez</a>
+        <div class="figuritas">
+          <div id="tun1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="tun2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Said</p>
+          </div>
+          <div id="tun3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Mustapha</p>
+          </div>
+          <div id="tun4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Bronn</p>
+          </div>
+          <div id="tun5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Drager</p>
+          </div>
+          <div id="tun6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Ifa</p>
+          </div>
+          <div id="tun7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Maaloul</p>
+          </div>
+          <div id="tun8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Mathlouthi</p>
+          </div>
+          <div id="tun9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Meriah</p>
+          </div>
+          <div id="tun10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Talbi</p>
+          </div>
+          <div id="tun11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Romdhane</p>
+          </div>
+          <div id="tun12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Khazri</p>
+          </div>
+          <div id="tun13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Laidouni</p>
+          </div>
+          <div id="tun14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Sassi</p>
+          </div>
+          <div id="tun15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Skhiri</p>
+          </div>
+          <div id="tun16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Slimane</p>
+          </div>
+          <div id="tun17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Jaziri</p>
+          </div>
+          <div id="tun18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Msakni</p>
+          </div>
+          <div id="tun19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Sliti</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais esp" id="españa">
+        <a class="name-white">España</a>
+        <div class="figuritas">
+          <div id="esp1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="esp2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Simon</p>
+          </div>
+          <div id="esp3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Sanchez</p>
+          </div>
+          <div id="esp4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Azpilicueta</p>
+          </div>
+          <div id="esp5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Garcia</p>
+          </div>
+          <div id="esp6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Alba</p>
+          </div>
+          <div id="esp7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Laporte</p>
+          </div>
+          <div id="esp8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Torres</p>
+          </div>
+          <div id="esp9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Gavi</p>
+          </div>
+          <div id="esp10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Koke</p>
+          </div>
+          <div id="esp11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Llorente</p>
+          </div>
+          <div id="esp12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Pedri</p>
+          </div>
+          <div id="esp13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Rodri</p>
+          </div>
+          <div id="esp14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Busquets</p>
+          </div>
+          <div id="esp15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Olmo</p>
+          </div>
+          <div id="esp16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Fati</p>
+          </div>
+          <div id="esp17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Torres</p>
+          </div>
+          <div id="esp18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Morata</p>
+          </div>
+          <div id="esp19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Sarabia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais cos" id="costa">
+        <a class="name-white">Costa Rica</a>
+        <div class="figuritas">
+          <div id="cos1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="cos2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Navas</p>
+          </div>
+          <div id="cos3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Moreira</p>
+          </div>
+          <div id="cos4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Blanco/p>
+          </div>
+          <div id="cos5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Calvo</p>
+          </div>
+          <div id="cos6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Duarte</p>
+          </div>
+          <div id="cos7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Fuller</p>
+          </div>
+          <div id="cos8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Oviedo</p>
+          </div>
+          <div id="cos9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">VArgas</p>
+          </div>
+          <div id="cos10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Waston</p>
+          </div>
+          <div id="cos11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Borges</p>
+          </div>
+          <div id="cos12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Galo</p>
+          </div>
+          <div id="cos13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Ruiz</p>
+          </div>
+          <div id="cos14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Tejeda</p>
+          </div>
+          <div id="cos15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Bennette</p>
+          </div>
+          <div id="cos16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Campbell</p>
+          </div>
+          <div id="cos17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Contreras</p>
+          </div>
+          <div id="cos18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Torres</p>
+          </div>
+          <div id="cos19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Venegas</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais ale" id="alemania">
+        <a class="name-white">Alemania</a>
+        <div class="figuritas">
+          <div id="ale1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="ale2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Neuer</p>
+          </div>
+          <div id="ale3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Ter Stegen</p>
+          </div>
+          <div id="ale4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Ginter</p>
+          </div>
+          <div id="ale5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Gosens</p>
+          </div>
+          <div id="ale6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Kehrer</p>
+          </div>
+          <div id="ale7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Raum</p>
+          </div>
+          <div id="ale8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Rudiger</p>
+          </div>
+          <div id="ale9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Sule</p>
+          </div>
+          <div id="ale10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Goretzka</p>
+          </div>
+          <div id="ale11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Gundogan</p>
+          </div>
+          <div id="ale12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Havertz</p>
+          </div>
+          <div id="ale13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Hofmann</p>
+          </div>
+          <div id="ale14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Kimmich</p>
+          </div>
+          <div id="ale15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Gnabry</p>
+          </div>
+          <div id="ale16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Muller</p>
+          </div>
+          <div id="ale17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Reus</p>
+          </div>
+          <div id="ale18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Sane</p>
+          </div>
+          <div id="ale19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Werner</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais jap" id="japon">
+        <a class="name-white">Japon</a>
+        <div class="figuritas">
+          <div id="jap1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="jap2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador">Gonda</p>
+          </div>
+          <div id="jap3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador">Kawashima</p>
+          </div>
+          <div id="jap4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador">Nagatomo</p>
+          </div>
+          <div id="jap5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador">Nakayama</p>
+          </div>
+          <div id="jap6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador">Tomiyasu</p>
+          </div>
+          <div id="jap7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador">Yamane</p>
+          </div>
+          <div id="jap8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador">Yoshida</p>
+          </div>
+          <div id="jap9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador">Endo</p>
+          </div>
+          <div id="jap10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador">Haraguchi</p>
+          </div>
+          <div id="jap11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador">Morita</p>
+          </div>
+          <div id="jap12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador">Shibasaki</p>
+          </div>
+          <div id="jap13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador">Tanaka</p>
+          </div>
+          <div id="jap14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador">Asano</p>
+          </div>
+          <div id="jap15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador">Furuhashi</p>
+          </div>
+          <div id="jap16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador">Ito</p>
+          </div>
+          <div id="jap17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador">Minamino</p>
+          </div>
+          <div id="jap18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador">Mitoma</p>
+          </div>
+          <div id="jap19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador">Osako</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais bel" id="belgica">
+        <a class="name-white">Belgica</a>
+        <div class="figuritas">
+          <div id="bel1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="bel2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bel12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="arg19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais can" id="canada">
+        <a class="name-black">Canada</a>
+        <div class="figuritas">
+          <div id="can1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="can2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="can19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais mar" id="marruecos">
+        <a class="name-white">Marruecos</a>
+        <div class="figuritas">
+          <div id="mar1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="mar2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mar19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais cro" id="croacia">
+        <a class="name-white">Croacia</a>
+        <div class="figuritas">
+          <div id="cro1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="cro2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cro19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais bra" id="brasil">
+        <a class="name-black">Brasil</a>
+        <div class="figuritas">
+          <div id="bra1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="bra2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="bra19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais ser" id="serbia">
+        <a class="name-white">Serbia</a>
+        <div class="figuritas">
+          <div id="ser1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="ser2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="ser19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais sui" id="suiza">
+        <a class="name-white">Suiza</a>
+        <div class="figuritas">
+          <div id="sui1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="sui2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="sui19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais cam" id="camerun">
+        <a class="name-white">Camerun</a>
+        <div class="figuritas">
+          <div id="cam1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="cam2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cam19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais por" id="portugal">
+        <a class="name-white">Portugal</a>
+        <div class="figuritas">
+          <div id="por1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="por2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="por19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais gan" id="ghana">
+        <a class="name-white">Ghana</a>
+        <div class="figuritas">
+          <div id="gan1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="gan2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="gan19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais uru" id="uruguay">
+        <a class="name-black">Uruguay</a>
+        <div class="figuritas">
+          <div id="uru1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="uru2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="uru19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais cor" id="corea">
+        <a class="name-white">Corea del Sur</a>
+        <div class="figuritas">
+          <div id="cor1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="cor2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="cor19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais mus">
+        <a class="name-white">Museum</a>
+        <div class="figuritas">
+          <div id="mus1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="mus2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="mus19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pais coca">
+        <a class="name-white">Coca Cola</a>
+        <div class="figuritas">
+          <div id="coca1" class="figurita off">
+            <p class="numero">1</p>
+            <p class="jugador">Escudo</p>
+          </div>
+          <div id="coca2" class="figurita off">
+            <p class="numero">2</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca3" class="figurita off">
+            <p class="numero">3</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca4" class="figurita off">
+            <p class="numero">4</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca5" class="figurita off">
+            <p class="numero">5</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca6" class="figurita off">
+            <p class="numero">6</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca7" class="figurita off">
+            <p class="numero">7</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca8" class="figurita off">
+            <p class="numero">8</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca9" class="figurita off">
+            <p class="numero">9</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca10" class="figurita off">
+            <p class="numero">10</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca11" class="figurita off">
+            <p class="numero">11</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca12" class="figurita off">
+            <p class="numero">12</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca13" class="figurita off">
+            <p class="numero">13</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca14" class="figurita off">
+            <p class="numero">14</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca15" class="figurita off">
+            <p class="numero">15</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca16" class="figurita off">
+            <p class="numero">16</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca17" class="figurita off">
+            <p class="numero">17</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca18" class="figurita off">
+            <p class="numero">18</p>
+            <p class="jugador"></p>
+          </div>
+          <div id="coca19" class="figurita off">
+            <p class="numero">19</p>
+            <p class="jugador"></p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>
