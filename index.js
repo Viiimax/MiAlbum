@@ -32,6 +32,7 @@ menuIcon.addEventListener("click", function(){
 let contador = 0;
 tengo.innerHTML = contador.toString();
 
+
 function cuantasFaltan(){
   let faltan = 638 - contador;
   falta.innerHTML = faltan.toString();
