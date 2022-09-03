@@ -67,22 +67,21 @@ document.querySelectorAll(".button-mode").forEach((item) => {
   });
 });
 
-for (let i = 0; i < 20; i++) {
-  const countrys = ["fifa", "stadiums", "qat", "ecu", "sen", "hol", "ing", "iran", "usa", "gal","arg", "ara", "mex", "pol", "fra", "aus", "din", "tun", "esp", "cos", "ale", "jap", "bel", "can", "mar", "cro", "bra", "ser", "sui", "cam", "por", "gan", "uru", "cor", "mus", "coca"];
 
-  const rcountrys = ["rfifa", "rstadiums", "rqat", "recu", "rsen", "rhol", "ring", "riran", "rusa", "rgal","rarg", "rara", "rmex", "rpol", "rfra", "raus", "rdin", "rtun", "resp", "rcos", "rale", "rjap", "rbel", "rcan", "rmar", "rcro", "rbra", "rser", "rsui", "rcam", "rpor", "rgan", "ruru", "rcor", "rmus", "rcoca"];
 
-  for(let a = 0; a < countrys.length; a++){
-    if (localStorage.getItem(countrys[a] + i)) {
-      document.getElementById(countrys[a] + i).className = "figurita on";
-      contador += 1;
-      tengo.innerHTML = contador.toString();
-      cuantasFaltan()
-    } else if(localStorage.getItem(rcountrys[a] + i)){
-      document.getElementById(rcountrys[a] + i).className = "figurita on";
+
+  for (let i = 0; i < 20; i++) {
+    const countrys = ["fifa", "stadiums", "qat", "ecu", "sen", "hol", "ing", "iran", "usa", "gal","arg", "ara", "mex", "pol", "fra", "aus", "din", "tun", "esp", "cos", "ale", "jap", "bel", "can", "mar", "cro", "bra", "ser", "sui", "cam", "por", "gan", "uru", "cor", "mus", "coca"];
+  
+    for(let a = 0; a < countrys.length; a++){
+      if (localStorage.getItem(countrys[a] + i)) {
+        document.getElementById(countrys[a] + i).className = "figurita on";
+        contador += 1;
+        tengo.innerHTML = contador.toString();
+        cuantasFaltan();
+      }
     }
-  }
-};
+  };
 
 if(Number(porcentaje.innerHTML) == 0 ){
   percent1.setAttribute("class", "mask full-1 cero") 
