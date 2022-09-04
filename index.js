@@ -7,7 +7,8 @@ const porcentaje = document.querySelector("#porcentaje");
 const percent1 = document.querySelector("#percent1");
 const percent2 = document.querySelector("#percent2");
 const percent3 = document.querySelector("#percent3");
-const img = document.querySelector("#img")
+const img = document.querySelector("#img");
+const repetidass = document.querySelector(".repetidas");
 
 menuIcon.addEventListener("click", function(){
   if(menu.getAttribute("hidden")){
@@ -30,43 +31,20 @@ menuIcon.addEventListener("click", function(){
 })
 
 let contador = 0;
-tengo.innerHTML = contador.toString();
+
+function tengoLocal(){
+  localStorage.setItem("tengoLocal", contador);
+}
 
 
 function cuantasFaltan(){
   let faltan = 638 - contador;
   falta.innerHTML = faltan.toString();
   porcentaje.innerHTML = Math.round(Number(tengo.innerHTML) * 100 / 638);
+  localStorage.setItem("faltanLocal", faltan);
 }
 
-document.querySelectorAll(".figurita").forEach((item) => {
-  item.addEventListener("click", function () {
-    if (item.className == "figurita off") {
-      item.className = "figurita on";
-      localStorage.setItem(item.id, "on");
-      contador += 1;
-      tengo.innerHTML = contador.toString();
-      cuantasFaltan()
-    } else {
-      item.className = "figurita off";
-      localStorage.removeItem(item.id);
-      contador -= 1;
-      tengo.innerHTML = contador.toString();
-      cuantasFaltan()
-    }
-  });
-});
 
-document.querySelectorAll(".button-mode").forEach((item) => {
-  item.addEventListener("click", function () {
-    if (item.className == "button-mode") {
-      document.querySelectorAll(".button-mode").forEach((item) => {
-        item.className = "button-mode";
-      })
-      item.className = "button-mode under";
-    }
-  });
-});
 
 
 
@@ -78,6 +56,7 @@ document.querySelectorAll(".button-mode").forEach((item) => {
       if (localStorage.getItem(countrys[a] + i)) {
         document.getElementById(countrys[a] + i).className = "figurita on";
         contador += 1;
+        tengoLocal();
         tengo.innerHTML = contador.toString();
         cuantasFaltan();
       }
@@ -129,3 +108,6 @@ if(Number(porcentaje.innerHTML) == 0 ){
   percent2.setAttribute("class", "fill-1 cien")
   percent3.setAttribute("class", "fill-1 cien")
 }
+
+
+repetidass.innerHTML = localStorage.repesLocal;

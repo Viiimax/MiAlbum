@@ -1,7 +1,17 @@
 const repetidas = document.querySelector("#repetidas");
+const tengos = document.querySelector(".tengo");
+const faltas = document.querySelector(".falta");
 
 let repes = 0;
-repetidas.innerHTML = repes.toString();
+
+function repesLocal(){
+  repetidas.innerHTML = repes.toString();
+  localStorage.setItem("repesLocal", repes)
+}
+
+
+tengos.innerHTML = localStorage.tengoLocal;
+faltas.innerHTML = localStorage.faltanLocal;
 
 
 for (let i = 0; i < 20; i++) {
@@ -11,6 +21,7 @@ for (let i = 0; i < 20; i++) {
       if (localStorage.getItem(rcountrys[a] + i)) {
         document.getElementById(rcountrys[a] + i).className = "figurita on";
         repes += 1;
+        localStorage.setItem("repesLocal", repes)
         repetidas.innerHTML = repes.toString();
       }
     }
