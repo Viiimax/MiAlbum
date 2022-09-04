@@ -30,6 +30,7 @@ menuIcon.addEventListener("click", function(){
   }
 })
 
+
 let contador = 0;
 
 function tengoLocal(){
@@ -41,6 +42,7 @@ function cuantasFaltan(){
   let faltan = 638 - contador;
   falta.innerHTML = faltan.toString();
   porcentaje.innerHTML = Math.round(Number(tengo.innerHTML) * 100 / 638);
+  localStorage.setItem("percent", Math.round(Number(tengo.innerHTML) * 100 / 638));
   localStorage.setItem("faltanLocal", faltan);
 }
 
@@ -109,5 +111,8 @@ if(Number(porcentaje.innerHTML) == 0 ){
   percent3.setAttribute("class", "fill-1 cien")
 }
 
-
-repetidass.innerHTML = localStorage.repesLocal;
+if(!localStorage.getItem("repesLocal")){
+repetidass.innerHTML = "0";
+} else{
+  repetidass.innerHTML = localStorage.repesLocal;
+}

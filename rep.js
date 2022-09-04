@@ -1,17 +1,16 @@
 const repetidas = document.querySelector("#repetidas");
 const tengos = document.querySelector(".tengo");
 const faltas = document.querySelector(".falta");
+const porcentajes = document.querySelector(".porcentaje");
 
 let repes = 0;
+
+
 
 function repesLocal(){
   repetidas.innerHTML = repes.toString();
   localStorage.setItem("repesLocal", repes)
 }
-
-
-tengos.innerHTML = localStorage.tengoLocal;
-faltas.innerHTML = localStorage.faltanLocal;
 
 
 for (let i = 0; i < 20; i++) {
@@ -26,4 +25,21 @@ for (let i = 0; i < 20; i++) {
       }
     }
   };
+
+
+  if(!localStorage.getItem("tengoLocal")){
+    tengos.innerHTML = "0";
+    } else{
+      tengos.innerHTML = localStorage.tengoLocal;
+    }
+  if(!localStorage.getItem("faltanLocal")){
+      faltas.innerHTML = "0";
+      } else{
+        faltas.innerHTML = localStorage.faltanLocal;
+      }
+  if(!localStorage.getItem("percent")){
+        porcentajes.innerHTML = "0";
+        } else{
+          porcentajes.innerHTML = localStorage.percent;
+        }
 
